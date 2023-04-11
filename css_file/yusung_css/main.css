@@ -1,0 +1,332 @@
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+html{
+  scroll-behavior: smooth;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color:white;
+    
+}
+
+.container{
+  position: relative;
+  width:100%;
+  height:100%;
+}
+.me{
+  width:22rem;
+  height: 22rem;
+}
+.mainImg{
+  width:34rem;
+  height:34rem;
+}
+/*상단바*/
+.menu * {
+    display: inline;
+}
+.menu li {
+    margin: 2rem;
+}
+.menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.menu li a:hover {
+    color: skyblue;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+.menu {
+    font-size: 1.2rem;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 1.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+} 
+.main3{
+  background-size: cover;
+    text-align: center;
+}
+/* 메인페이지 */
+.main {
+    background-size: cover;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.profile {
+    border-radius: 30%;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 1.25rem;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.profile img {
+    border-radius: 30%;
+}
+.page{
+    text-align: center;
+    width:auto;
+    height:auto; 
+    margin:0;
+    padding:0;
+}
+.main_text {
+    margin-bottom: 0.625rem;
+    padding-top: 0.625rem;
+}
+/* 프로필 */
+.profile2 {
+    border-radius: 30%;
+    display: inline-block;
+    /*padding: 0.5rem;
+    margin-top: 1.25rem;*/
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.profile2 img {
+    border-radius: 30%;
+}
+.intext {
+    text-align: left;
+    float: right;
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+
+/*tmi*/
+.tmi{
+    text-align: center;
+   
+}
+h1 {
+    text-align: center;
+    padding-top:2rem;
+}
+
+.lists{
+    text-align: center;
+    font-family: 'Pretendard-Thin';
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+    /*line-height: 1.5;*/
+    font-style: italic;
+    padding-bottom:0.625rem;
+    /*margin-top:10px;*/
+}
+
+.list_img {
+    border-radius:30%;
+    text-align: center;
+    width: 14rem;
+    height: 14rem;
+    display: inline-block;
+    margin: 3vh 3vh;
+    margin-bottom: 0.625rem;
+}
+
+.favorites{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /*grid-column-gap: 20px;
+    grid-row-gap: 5px;*/
+}
+
+.list_text{
+    text-align: center;
+}
+
+/*
+.favorites {
+    display:grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px 400px;
+    margin-top: 60px;
+}
+*/
+
+
+/*
+.favorites {
+    display:inline-flex;
+    margin-top: 60px;
+}
+
+*/
+/*
+#container{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #6c6c6c;
+    text-align: center;
+}
+header{
+    width: 100%;
+    height: 15%;
+    background-color: #6c6c6c;
+    box-shadow: 1px 1px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#right{
+    float:right;
+    width:10%;
+    height:100%;
+}
+#heart{
+    width:100px;
+    height:100px;
+}
+#good{
+    margin-left:30px;
+    font-family:'EarlyFontDiary',sans-serif;
+}
+#likenumber{
+    margin-left:40px;
+    font-family:'EarlyFontDiary',sans-serif;
+}
+*/
+/*메인 애니메이션*/
+:root {
+    --green: #b8d953;
+    --lilac: #b2b2eb;
+    --pink: #bb86e9;
+    --dark-green: #529a91;
+    --peach: #fe96b7;
+    --black: #191819;
+    --grey: #2a292a;
+    --white: #d9d9d9;
+  }
+  
+  .Hello-World {
+    font-family: "Ultra", serif;
+    text-align: center;
+  }
+
+  
+  .bizzy {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    justify-content: center;
+    max-height: 1.25rem;
+    text-align: center;
+  }
+  
+  @keyframes fontGrow {
+    0% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(2);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  
+  .bizzy-letters {
+    animation-name: fontGrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .letter-H {
+    color: var(--peach);
+  }
+  
+  .letter-E {
+    color: var(--green);
+    animation-delay: 1s;
+  }
+  
+  .letter-L1 {
+    color: var(--pink);
+  }
+  
+  .letter-L2 {
+    color: var(--lilac);
+    animation-delay: 1s;
+  }
+  
+  .letter-O {
+    color: var(--dark-green);
+  }
+  
+  .bizzy-B {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+  
+  @keyframes fontGrowReverse {
+    0% {
+      transform: scaleY(2);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(2);
+    }
+  }
+  
+  .bizzy-letters-B {
+    animation-name: fontGrowReverse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transition-timing-function: ease-in-out;
+    
+  }
+  
+  .letter-W {
+    color: #cbe69f;
+  }
+  
+  .letter-O {
+    color: #cbe;
+    animation-delay: 1s;
+    font-stretch: ultra-condensed;
+  }
+  
+  .letter-R {
+    color: #91d1df;
+  }
+  
+  .letter-L {
+    color: #f7b407;
+    animation-delay: 1s;
+  }
+  
+  .letter-D {
+    color: pink;
+  }

@@ -1,0 +1,151 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #181818;
+}
+.h2{
+    color :rgba(255, 141, 59, 0.63)
+}
+/*네비게이션 바*/
+ul,ol{list-style:none}
+a{
+    text-decoration:none;
+    color:#ffffffde;
+    font-size:20px;
+}
+#nav {
+    position:fixed;
+    animation: down 0.5s ease;
+    z-index: 20;
+
+  }
+  
+  @keyframes down {
+    0%{
+      transform: translateY(-50px)
+    }
+    100%{
+      transform: translateY(0px)
+    }
+  }
+nav{
+    width:100%;
+    overflow:hidden;
+    height:80px;
+    background-color:#0000004b
+}
+#nav{
+    text-align:center;
+    word-spacing : 200px;
+}
+#nav>ul{
+    display:inline-block
+}
+#nav>ul li{
+    float:left;
+    padding:0 30px;
+    line-height:80px;
+}
+/*프로필*/
+.box {
+    width: 300px;
+    height: 300px; 
+    border-radius: 70%;
+    position: absolute;
+    left: 320px;
+    top: 210px;
+    bottom: 340px;
+}
+.m_pic {
+    border-radius: 70%;
+    position: absolute;
+    left:5px;
+    top: 5px;
+    object-fit: cover;
+}
+.hello {
+    color : white;
+    font-size:medium;
+    position: absolute;
+    left: 700px;
+    top : 250px;
+    line-height: 4em;
+}
+.more {
+    color : white;
+    font-size : small;
+    position: absolute;
+    left : 800px;
+    top : 450px;
+    letter-spacing: 10px;
+}
+
+.first_page {
+    width : 100vw;
+    height : 100vh;
+}
+
+.second_page {
+    width : 100vw;
+    height : 100vh;
+}
+
+.about_box{
+    position: relative;
+    width: 800px;
+    height: 200px;
+    
+    background: rgba(49, 49, 49, 0.457);
+    border-radius: 30px;
+    left: 25%
+}
+.a_content{
+    position: relative;
+    text-align: center;
+    
+    
+    color : white;
+}
+.like_box{
+    position: relative;
+    width: 800px;
+    height: 200px;
+    
+    background: rgba(49, 49, 49, 0.457);
+    border-radius: 30px;
+    left: 25%
+}
+.l_content{
+    position: relative;
+    
+    text-align: center;
+    color : white;
+}
+
+.third_page {
+    width : 100vw;
+    height : 100vh;
+}
+
+.vision_box{
+    position: relative;
+
+    width: 800px;
+    height: 350px;
+    background: rgba(255, 141, 59, 0.63);
+    border-radius: 30px;
+    border: 5px solid rgba(49, 49, 49, 0.457);
+    left: 25%
+}
+
+.v_content{
+    position:relative;
+
+    text-align: center;
+    color : white;
+}

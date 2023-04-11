@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <style>
+       body{
+        /*기본배경 설정*/
+        background-image: url('https://d31nhj1t453igc.cloudfront.net/cloudinary/2022/Apr/08/5XgqlTi0U1QQT5s2jGDo.gif');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+
+       *{
+        /*기본 설정값:박스의 크기는 글자의 width와 height로*/
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <link href="./css_file/team_css/teamStyle.css" rel="stylesheet">
+
+    <!--프로그래스바 스크립트-->
+    <script>
+        window.onscroll = function () {
+            progressBar()
+        };
+     
+        function progressBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll/ height) * 100;
+            document.getElementsByClassName("progress-bar")[0].style.width = scrolled + "%";
+        }
+    </script>
+    
+    
+</head>
+<body>
+    
+    <div class ="bar">
+    <!--프로그래스바 구현-->
+    <div class="porgress-back">
+        <div class="progress-container">
+           <div class="progress-bar"></div>
+    </div>
+    <!-- 상단 메뉴바 -->
+    </div>
+        <ul>
+            <li><a href="index.html">TEAM5</a></li>
+            <li><a href="#HISTORY">HISTORY</a></li>
+            <li><a href="#VISION">VISION</a></li>
+            <li><a href="#MEMBERS">MEMBERS</a></li>
+        </ul>
+    </div>
+
+    <!--처음 소개 exWelcome To LikeLion Tema5-->
+    <div class="bg">
+        <div style="height:9.5vw;"></div>
+        <h1 class = "first-page-font content"><span>Welcome</span> 
+            <span>To</span> <span>LikeLion</span> <span>Team5</span></h1>
+    </div>
+    
+    <!--별 페이지(폐이지 넘김효과)-->
+    <div class="bg"></div>
+
+    <!--history-->
+    <div class = "textbg">
+        <div id = "HISTORY"></a> 
+        <h1 class ="second-page-font content"><span>H&nbsp;&nbsp;</span><span>I&nbsp;&nbsp;</span><span>S&nbsp;&nbsp;</span><span>T&nbsp;&nbsp;</span><span>O&nbsp;&nbsp;</span><span>R&nbsp;&nbsp;</span><span>Y&nbsp;&nbsp;</span></h1>
+        <hr style="width:90%; margin:auto;">
+        <div style="margin:1vw;"><h3>2023-03-22</h3><h3 class="second-text-font">Organized</h3></div><br>
+        <div style="margin:1vw;"><h3>2023-03-24</h3><h3 class="second-text-font">First meeting</h3></div><br>
+        <div style="margin:1vw;"><h3>2023-03-25</h3><h3 class="second-text-font">Main page design</h3></div><br>
+        <div style="margin:1vw;"><h3>2023-03-29</h3><h3 class="second-text-font">PMP presentation</h3></div><br>
+        <div style="margin:1vw;"><h3>2023-04-02</h3><h3 class="second-text-font">Personal Page Feedback</h3></div><br>
+        <div style="margin:1vw;"><h3>2023-04-09</h3><h3 class="second-text-font">Complete main page and combine pages</h3></div><br>
+        <p></p>
+    </div>
+
+    <!--별 페이지(폐이지 넘김효과)-->
+    <div class="bg"></div>
+
+    <!--vision-->
+    <div class = "textbg">
+        <a id = "VISION"></a> 
+        <h1 class ="third-page-font content"><span>V&nbsp;&nbsp;</span><span>I&nbsp;&nbsp;</span><span>S&nbsp;&nbsp;</span><span>I&nbsp;&nbsp;</span><span>O&nbsp;&nbsp;</span><span>N</span></h1>
+        <hr style="width:90%; margin:auto;">
+        <div style="margin-top:8vw;">
+            <h3 class="third-text-font">Let's Make Together!</h3>
+            <br>
+            <h2 style="font-style: italic;">Cooperate & Solve</h2>
+        </div>
+        
+    </div>
+
+    <!--별 페이지(폐이지 넘김효과)-->
+    <div class="bg"></div>
+
+    <!--teamPictrue-->
+    <div class = "textbg" >
+        <a id = "MEMBERS"></a> 
+        <div class="prevention" >
+            <div class="imgtextbox-left imgtextbox-top">
+                <p>Byungsoo Kim</p>
+                <p><a href = "./김병수.html">김병수</a></p>
+                <p style="font-size:90%; color:rgb(154, 154, 154);">병수에 대해 궁금하다면 이름을 눌러주세요</p>
+            </div>
+            <img  class="img-top team-img" src = './picture_file/chaewon_picture/bs.jpeg'>
+            <img  class="img-top team-img" src = './picture_file/chaewon_picture/ys.jpeg'>
+            <div class="imgtextbox-right imgtextbox-top">
+                <p>Yusung Choi</p>
+                <p><a href = "./최유성.html">최유성</a></p>
+                <p style="font-size:90%; color:rgb(154, 154, 154);">유성이에 대해 궁금하다면 이름을 눌러주세요</p>
+            </div>
+        </div>
+        <div class="prevention">
+            <div class="imgtextbox-left imgtextbox-bottom">
+                <p>Jehyeon Cho</p>
+                <p><a href = "./조제현.html">조제현</a></p>
+                <p style="font-size:90%; color:rgb(154, 154, 154);">제현이에 대해 궁금하다면 이름을 눌러주세요</p>
+            </div>
+            <img class="img-bottom team-img" src = './picture_file/chaewon_picture/jh.jpeg'>
+            <img class="img-bottom team-img" src = './picture_file/chaewon_picture/cw.jpeg'>
+            <div class="imgtextbox-right imgtextbox-bottom">
+                <p>Chaewon Yoon</p>
+                <p><a href = "./윤채원.html">윤채원</a></p>
+                <p style="font-size:90%; color:rgb(154, 154, 154);">채원이에 대해 궁금하다면 이름을 눌러주세요</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
